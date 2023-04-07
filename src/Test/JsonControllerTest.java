@@ -1,12 +1,9 @@
 package Test;
 
 import Controller.JsonController;
-import Controller.ProductController;
 import Model.Product;
 import org.json.simple.JSONObject;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class JsonControllerTest {
 

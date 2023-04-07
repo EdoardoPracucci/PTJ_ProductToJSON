@@ -1,12 +1,13 @@
-package Controller;
+package View;
 
 import Model.Product;
+
 import java.util.Scanner;
 
-public class ProductController {
-
+public class InputValue {
     Scanner sc = new Scanner(System.in);
 
+    //change move to view
     public void inputProductValue(Product product){
         System.out.println("Insert Product ID:");
         product.setId(sc.nextInt());
@@ -18,5 +19,4 @@ public class ProductController {
         System.out.println("Insert Product Price:");
         product.setPrice(sc.nextDouble());
     }
-
 }
