@@ -2,6 +2,8 @@ package Controller;
 
 import Model.Product;
 import org.json.simple.JSONObject;
+import com.google.gson.*
+
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,6 +25,14 @@ public class JsonController {
             e.printStackTrace();
         }
         System.out.println("JSON file created: "+jsonObject);
+    }
+
+    public void productToGson(Product product){
+        Gson gson = new Gson();
+        String productJson = gson.toJson(product);
+        System.out.println(productJson);
+        String productsJson = gson.toJson(product);
+        System.out.println(usersJson);
     }
 
 
